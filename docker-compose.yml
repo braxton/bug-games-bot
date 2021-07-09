@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  bot:
+    image: braxton/bug-games-bot
+    environment: 
+      - 'DISCORD_TOKEN='
+      - 'DISCORD_PREFIX=$$' # The actual prefix is only a single $
+      - 'OWNER=' # Discord user ID
+      - 'DB_NAME=bug-games-bot'
+      - 'TIMEZONE=America/New_York' # TZ database format
+    depends_on:
+      - db
+    networks:
+      - internal
+  db:
+    image: rethinkdb
+    ports:
+      # 5010 is used because 8080 is too common
+      - 5010:8080
+    networks:
+      - internal
+    
+networks:
+  internal:
+    driver: bridge
