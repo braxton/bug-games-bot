@@ -15,9 +15,6 @@ services:
       - internal
   db:
     image: rethinkdb
-    ports:
-      # 5010 is used because 8080 is too common
-      - 5010:8080
     networks:
       - internal
     
