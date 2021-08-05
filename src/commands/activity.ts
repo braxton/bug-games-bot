@@ -11,7 +11,8 @@ const validActivities = {
   "poker": "755827207812677713",
   "betrayal": "773336526917861400",
   "youtube": "755600276941176913",
-  "fishing": "814288819477020702"
+  "fishing": "814288819477020702",
+  "chess": "832012774040141894"
 };
 
 export default class implements IBotCommand {

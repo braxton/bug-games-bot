@@ -2,7 +2,11 @@ import { Client, Message } from "discord.js";
 import DatabaseHandler from "helpers/database";
 
 export type ActivityType =
-  "fishing" | "youtube" | "betrayal" | "poker"
+  "fishing" 
+  | "youtube" 
+  | "betrayal" 
+  | "poker" 
+  | "chess"
 
 export const enum PermissionLevel {
   User,
