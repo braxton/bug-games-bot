@@ -7,7 +7,7 @@
     "dayjs": "^1.10.6",
     "discord.js": "^12.5.3",
     "klaw": "^3.0.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "rethinkdb-ts": "^2.4.13"
   },
   "devDependencies": {
